@@ -576,4 +576,27 @@ input[type ="submit"]:hover{
         right: 2rem;
     }
 }
+@media screen and (max-width: 500px){
+    timeline .date{
+        left: -0rem;
+    }
+    .timeline ul{
+        margin: 0 0 0 auto;
+        left:-0rem;
+    }
+    .timeline p{
+        font-size: 1.0rem;
+    }
+    .timeline .date::before{
+        font-size: 1.0rem;
+        
+    }
+    form{
+        width: 100%;
+    }
+    .up{
+        right: 2rem;
+    }
+}
+}
 /*End media queries*/

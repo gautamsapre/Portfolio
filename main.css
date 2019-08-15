@@ -26,7 +26,7 @@ a{
 p{
     font-size: 1.8rem;
     font-weight: 300;
-}
+} 
 img{
     width: 100%;
 }
@@ -431,7 +431,7 @@ input[type ="submit"]:hover{
 @media screen and (max-width:786px){
     body{
 
-        background: url("images/sitebg.jpg") no-repeat center fixed;
+        background: url("images/sitebg4.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
@@ -524,7 +524,7 @@ input[type ="submit"]:hover{
 
     body{
 
-        background: url("images/sitebg.jpg") no-repeat center fixed;
+        background: url("images/sitebg4.jpg") no-repeat center fixed;
         background-size: cover;
     }
     .menu-toggler{
@@ -585,7 +585,7 @@ input[type ="submit"]:hover{
 @media screen and (max-width: 500px){
     body{
 
-        background: url("images/sitebg.jpg") no-repeat center fixed;
+        background: url("images/sitebg4.jpg") no-repeat center fixed;
         background-size: cover;
     }
     timeline .date{

@@ -430,11 +430,16 @@ input[type ="submit"]:hover{
 
 /*Start media queries*/
 @media screen and (max-width:786px){
-   /* body{
+    body{    
+    background: url(images/sitebg1.jpg) 50% 50% no-repeat scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    background-size: cover;}
+    /*{
 
         background: url("images/sitebg3.jpg") no-repeat center fixed;
         background-size: cover;
-    }*/
+    }*/}
 
     .landing-text h1{
         font-size: 15rem;

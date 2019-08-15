@@ -24,7 +24,7 @@ body{
     background-size: cover;
 }
    
-}
+
 section{
     padding: 6rem 0;
 }
@@ -438,11 +438,16 @@ input[type ="submit"]:hover{
 
 /*Start media queries*/
 @media screen and (max-width:786px){
-    /*body{
-
-        background: url("images/sitebg4.jpg") no-repeat center fixed;
+    body{
+        height:600px;
+        width:100%;
+        position:relative;
+        background: url(images/sitebg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-    }*/
+    }
 
     .landing-text h1{
         font-size: 15rem;
@@ -531,11 +536,16 @@ input[type ="submit"]:hover{
 }
 @media screen and (max-width: 600px){
 
-    /*body{
-
-        background: url("images/sitebg4.jpg") no-repeat center fixed;
+    body{
+        height:600px;
+        width:100%;
+        position:relative;
+        background: url(images/sitebg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-    }*/
+    }
     .menu-toggler{
         top: 2rem;
         right: 2rem;
@@ -592,11 +602,16 @@ input[type ="submit"]:hover{
     }
 }
 @media screen and (max-width: 500px){
-    /*body{
-
-        background: url("images/sitebg4.jpg") no-repeat center fixed;
+    body{
+        height:600px;
+        width:100%;
+        position:relative;
+        background: url(images/sitebg.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
         background-size: cover;
-    }*/
+    }
     timeline .date{
         left: -0rem;
     }

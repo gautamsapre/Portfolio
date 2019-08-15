@@ -429,11 +429,11 @@ input[type ="submit"]:hover{
 
 /*Start media queries*/
 @media screen and (max-width:786px){
-    body{
+    /*body{
 
         background: url("images/sitebg4.jpg") no-repeat center fixed;
         background-size: cover;
-    }
+    }*/
 
     .landing-text h1{
         font-size: 15rem;
@@ -522,11 +522,11 @@ input[type ="submit"]:hover{
 }
 @media screen and (max-width: 600px){
 
-    body{
+    /*body{
 
         background: url("images/sitebg4.jpg") no-repeat center fixed;
         background-size: cover;
-    }
+    }*/
     .menu-toggler{
         top: 2rem;
         right: 2rem;
@@ -583,11 +583,11 @@ input[type ="submit"]:hover{
     }
 }
 @media screen and (max-width: 500px){
-    body{
+    /*body{
 
         background: url("images/sitebg4.jpg") no-repeat center fixed;
         background-size: cover;
-    }
+    }*/
     timeline .date{
         left: -0rem;
     }

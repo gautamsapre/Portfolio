@@ -14,6 +14,9 @@ body{
     height: 100%;
     background: url("images/sitebg.jpg") no-repeat center fixed;
     background-size: cover;
+    height:100%;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
    
 }
 section{
@@ -432,7 +435,9 @@ input[type ="submit"]:hover{
     body{
         background-image: url(images/sitebg.jpg);
         background-repeat: no-repeat center fixed;
-        background-size: cover ;
+        background-size: cover;
+        height: 100%;
+        overflow: hidden;
     }
 
     .landing-text h1{
@@ -526,6 +531,8 @@ input[type ="submit"]:hover{
         background-image: url(images/sitebg.jpg);
         background-repeat: no-repeat center fixed;
         background-size: cover ;
+        height: 100%;
+        overflow: hidden;
         /*background: url("images/sitebg.jpg") no-repeat center fixed;
         background-size: cover;*/
     }
@@ -589,6 +596,8 @@ input[type ="submit"]:hover{
         background-image: url(images/sitebg.jpg);
         background-repeat: no-repeat center fixed;
         background-size: cover ;
+        height: 100%;
+        overflow: hidden;
         /*background: url("images/sitebg.jpg") no-repeat ;
         background-size: cover;*/
     }

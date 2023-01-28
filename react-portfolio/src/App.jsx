@@ -7,6 +7,7 @@ import Projects from './components/projects/Projects'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
 
+
 const App = () => {
     return (
         <>
@@ -14,7 +15,7 @@ const App = () => {
             <Nav />
             <About />
             <Experience />
-            <Projects />  
+            <Projects />
             <Contact />
             <Footer />
         </>

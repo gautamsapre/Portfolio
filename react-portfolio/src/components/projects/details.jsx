@@ -3,8 +3,22 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './details.css';
+
+function checkPossible(data){
+    if (data.existingLink) {
+        return (
+            <a href={data.link} className='btn' target='_blank' >More Info</a>
+        )
+
+        } else {
+            return (
+                <Button variant="primary" disabled >
+                Details coming soon
+              </Button>
+            )
+        }
+}
 function MyVerticallyCenteredModal(props) {
-    let desc = props.description;
     return (
     <div className="test">
       <Modal
@@ -15,17 +29,19 @@ function MyVerticallyCenteredModal(props) {
       >
         <Modal.Header closeButton >
           <Modal.Title className="test" id="contained-modal-title-vcenter">
-            Modal heading
+            {props.data.title}
           </Modal.Title>
         </Modal.Header>
         <Modal.Body className="test">
-          <h4>Centered Modal</h4>
           <p>
-            {props.description}
+            {props.data.description}
           </p>
         </Modal.Body>
         <Modal.Footer>
-          <Button className="test" onClick={props.onHide}>Close</Button>
+            {
+                checkPossible(props.data)
+            }
+            <Button className="test" onClick={props.onHide}>Close</Button>
         </Modal.Footer>
       </Modal>
       </div>
@@ -38,11 +54,11 @@ function MyVerticallyCenteredModal(props) {
     return (
       <>
         <Button variant="primary" onClick={() => setModalShow(true)}>
-          Launch vertically centered modal
+          Details
         </Button>
   
         <MyVerticallyCenteredModal
-          description={props.description}
+          data={props.data}
           show={modalShow}
           onHide={() => setModalShow(false)}
         />

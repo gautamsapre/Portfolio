@@ -56,10 +56,12 @@
     .experience__container{
         gap:1rem;
         grid-template-columns: 1fr;
+        justify-content: center;
     }
     .experience__container > div {
         width: 100%;
         padding:1rem;
+        justify-content: center;
     }
 
 

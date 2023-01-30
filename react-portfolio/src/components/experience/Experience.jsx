@@ -10,12 +10,12 @@ import CPI from '../../assets/CPI.png'
 import SS from '../../assets/SpiderSmart.png'
 import CHS from '../../assets/Coppell.png'
 import DisplayModal  from './item_detail';
+import exp_data from './exp_data'
 import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
 
     return (
-        
         <section id="experience" className='experience' >
             <h5>What I have done so far...</h5>
             <h2>Experience</h2>
@@ -40,7 +40,7 @@ const Experience = () => {
                         
                     </div>
                     <div className="modal_left">
-                        <DisplayModal/>
+                        <DisplayModal data = {exp_data[0]}/>
                     </div>
                 </VerticalTimelineElement>
 
@@ -61,7 +61,7 @@ const Experience = () => {
                         </div>
                     </div>
                     <div className="modal_right">
-                        <DisplayModal/>
+                        <DisplayModal data = {exp_data[1]}/>
                     </div>
                     
                 </VerticalTimelineElement>
@@ -85,7 +85,7 @@ const Experience = () => {
                     
                     </div>
                     <div className="modal_left">
-                        <DisplayModal/>
+                        <DisplayModal data = {exp_data[2]}/>
                     </div>
                 </VerticalTimelineElement>
                 
@@ -107,7 +107,7 @@ const Experience = () => {
                         </div>
                     </div>
                     <div className="modal_right">
-                        <DisplayModal/>
+                        <DisplayModal data = {exp_data[3]}/>
                     </div>
                 </VerticalTimelineElement>
 
@@ -130,7 +130,7 @@ const Experience = () => {
                         </div>
                     </div>
                     <div className="modal_left">
-                        <DisplayModal/>
+                        <DisplayModal data = {exp_data[4]}/>
                     </div>
                 </VerticalTimelineElement>
 
@@ -154,7 +154,7 @@ const Experience = () => {
                        
                     </div>
                     <div className="modal_right">
-                        <DisplayModal/>
+                        <DisplayModal data = {exp_data[5]}/>
                     </div>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement

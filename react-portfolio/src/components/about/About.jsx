@@ -20,7 +20,11 @@ const About = () => {
           </div>
           <p>
 
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Hi! My name is Gautam Sapre. I am currently a student at the University of Texas at Dallas. I am pursuing a Master's in Computer Science with a focus in Data Science. I have previously worked two software engineering intenships at Amazon AWS, 
+          and Communications and Power Industries where I had a chance to work with some really cool technologies. <br /><br /> 
+          I have experience in web-design, database design, and full-stack development and have a major interest in machine learning and NLP concepts. I have a strong passion for learning new technologies, exploring unknown solutions to complex problems, and 
+          making real-world use of my knowledge. <br/><br/> Let's create something special.
+
           </p>
           <div className="social__media">
           <a href="https://www.linkedin.com/in/gautam-sapre" target="_blank"> <BsLinkedin /> </a>

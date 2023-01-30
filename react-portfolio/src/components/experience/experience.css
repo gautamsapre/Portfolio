@@ -38,3 +38,28 @@
     font-size: small;
     font-weight: normal;
 }
+@media screen and (max-width: 1224px) {
+    .experience {
+        padding-top: 30rem;
+        height: 290vh;
+    }
+}
+@media screen and (max-width: 600px) {
+    .experience {
+        
+        height: 150vh;
+    }
+    .experience__text h5 {
+        font-size: 15px;
+    }
+    .experience__text h6 {
+        font-size: 10px;
+    }
+    .experience__text {
+        font-size: 15px;
+        padding-bottom: 5rem;
+    }
+    .experience__content{
+        gap: 0rem;
+    }
+}

@@ -36,14 +36,14 @@
 .pro {
     height: 100vh;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
     .projects__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
         justify-content: center;
     }
     .pro {
-        padding-top: 50vh;
+        height: 130vh;
     }
 }
 @media screen and (max-width: 600px) {
@@ -54,6 +54,8 @@
         justify-content: center;
     }
     .pro {
-        padding-top: 70vh;
+        padding-top: 70rem;
+        padding-bottom: 15rem;
+        height: 130vh;
     }
 }

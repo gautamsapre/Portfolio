@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './nav.css'
 import {FiHome} from 'react-icons/fi'
 import {BsFillPersonFill} from 'react-icons/bs';
@@ -8,8 +8,33 @@ import {GiSkills} from 'react-icons/gi'
 import {BsFillChatDotsFill} from 'react-icons/bs';
 import {useState} from 'react'
 
+
+
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
+  // const useScrollPos = () => {
+  //   const [scrollPostion, setScrollPosition] = useState(0);
+  
+  //   useEffect (() => {
+  //     const updatePosition = () => {
+  //       setScrollPosition(window.pageYOffset)
+  //     };
+  //     window.addEventListener('scroll', updatePosition);
+  
+  //     updatePosition();
+  
+  //     return () => window.removeEventListener('scroll', updatePosition);
+  //   });
+  //   return scrollPostion;
+  
+  // }
+  // const scrollPostion = useScrollPos();
+  // console.log(scrollPostion);
+  // if (scrollPostion > 1009 && scrollPostion < 1616){
+  //   console.log(activeNav);
+  //   setActiveNav('#about');
+    
+  //}
   return (
     <nav>
       <a href="#" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><FiHome/></a>

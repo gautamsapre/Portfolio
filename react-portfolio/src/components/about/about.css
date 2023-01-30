@@ -39,7 +39,7 @@
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1224px) {
     .about__container {
         grid-template-columns: 1fr;
     }
@@ -49,6 +49,9 @@
     }
     .about_content p{
         margin: 1rem 0 1.5rem;
+    }
+    .about{
+        height: 120vh;
     }
 }
 @media screen and (max-width: 600px) {
@@ -60,8 +63,9 @@
     .about_content p{
         margin: 1.5rem 0;
     }
-    section {
-        padding-bottom: 20vh;
-    }
+        .about{
+            height: 140vh;
+        }
+
 
 }

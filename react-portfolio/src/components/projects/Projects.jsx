@@ -38,7 +38,7 @@ const data = [
 
 const Projects = () => {
   return (
-    <section id="projects">
+    <section id="projects" className='pro'>
       <h5>My recent work</h5>
       <h2>Projects</h2>
 

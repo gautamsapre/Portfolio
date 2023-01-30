@@ -33,11 +33,17 @@
     gap: 1rem;
     margin-bottom: 1rem;
 }
+.pro {
+    height: 100vh;
+}
 @media screen and (max-width: 1024px) {
     .projects__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
         justify-content: center;
+    }
+    .pro {
+        padding-top: 50vh;
     }
 }
 @media screen and (max-width: 600px) {
@@ -46,5 +52,8 @@
         grid-template-columns: 1fr;
         gap: 1rem;
         justify-content: center;
+    }
+    .pro {
+        padding-top: 70vh;
     }
 }

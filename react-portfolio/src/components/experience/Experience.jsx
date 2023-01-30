@@ -1,103 +1,171 @@
-import React from 'react'
+import React, { useState } from 'react';
 import './experience.css'
-import { BsPatchCheckFill } from 'react-icons/bs'
+import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
+import {MdWork as WorkIcon} from 'react-icons/md';
+import {MdSchool as SchoolIcon} from 'react-icons/md';
+import {MdStar as StarIcon} from 'react-icons/md';
+import UTD from '../../assets/UTD.png'
+import AWS from '../../assets/AWS.png'
+import CPI from '../../assets/CPI.png'
+import SS from '../../assets/SpiderSmart.png'
+import CHS from '../../assets/Coppell.png'
+import DisplayModal  from './item_detail';
+import 'react-vertical-timeline-component/style.min.css';
 
 const Experience = () => {
-  return (
-    <section id="experience">
+
+    return (
+        
+        <section id="experience" className='experience' >
+            <h5>What I have done so far...</h5>
+            <h2>Experience</h2>
+            <div className="container experience__container">
+            <VerticalTimeline  lineColor ={"white"}>
+                <VerticalTimelineElement
+                    
+                    className="vertical-timeline-element--education"
+                    date="Aug 2022 - May 2024"
+                    iconStyle={{ background: '#000', color: '#fff' }}
+                    icon={<SchoolIcon />}
+
+                >
+                    <div className="experience__content">
+                        <div className="experience__text">
+                            <h5 className="vertical-timeline-element-title">Master's in Computer Science</h5>
+                            <h6 className="vertical-timeline-element-subtitle">The University of Texas at Dallas</h6>
+                        </div>
+                        <div>
+                         <img src={UTD}  className="experience__img"alt="" />
+                        </div>
+                        
+                    </div>
+                    <div className="modal_left">
+                        <DisplayModal/>
+                    </div>
+                </VerticalTimelineElement>
+
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="May 2022 - Aug 2022"
       
-      <h5>What Skills I Have</h5>
-      <h2>Experience</h2>
-      <div className="container experience__container">
-        <div className="exp__frontend">
-          <h3>Development</h3>
-          <div className="experience__content">
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>JAVA</h4>
-                </div>
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>Python</h4>
-                </div>
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                 <h4>C++</h4>
-                </div>
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>Javascript</h4>
-                </div>       
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>ReactJS</h4>
-                </div>    
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>HTML</h4>
-                </div> 
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>SQL</h4>
-                </div>
-            </article>
+                    iconStyle={{ background: '#800000 ', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <div className="experience__content">
+                        <div>
+                         <img src={AWS}  className="experience__img"alt="" />
+                        </div>
+                        <div className="experience__text">
+                            <h5 className="vertical-timeline-element-title">Software Development Engineer Intern</h5>
+                            <h6 className="vertical-timeline-element-subtitle">Amazon Inc</h6>
+                        </div>
+                    </div>
+                    <div className="modal_right">
+                        <DisplayModal/>
+                    </div>
+                    
+                </VerticalTimelineElement>
 
-          </div>
-        </div>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="Aug 2018 - May 2022"
+                    iconStyle={{ background: '#000', color: '#fff' }}
+                    icon={<SchoolIcon />}
+                >
+                    <div className="experience__content">
+                        
+                        <div className="experience__text">
+                            <h5 className="vertical-timeline-element-title">Bachelor's in Computer Science</h5>
+                            <h6 className="vertical-timeline-element-subtitle">The University of Texas at Dallas</h6>
+                            
+                        </div>
+                        <div>
+                         <img src={UTD}  className="experience__img"alt="" />
+                        </div>
+                    
+                    </div>
+                    <div className="modal_left">
+                        <DisplayModal/>
+                    </div>
+                </VerticalTimelineElement>
+                
+                
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="Nov 2020 - Mar 2022"
+      
+                    iconStyle={{ background: '#800000', color: '#black' }}
+                    icon={<WorkIcon />}
+                >
+                    <div className="experience__content">
+                        <div>
+                         <img src={CPI}  className="experience__img"alt="" />
+                        </div>
+                        <div className="experience__text">
+                            <h5 className="vertical-timeline-element-title">Software Engineering Intern</h5>
+                            <h6 className="vertical-timeline-element-subtitle">Communications and Power Ind.</h6>
+                        </div>
+                    </div>
+                    <div className="modal_right">
+                        <DisplayModal/>
+                    </div>
+                </VerticalTimelineElement>
 
 
-        <div className="exp__tools">
-          <h3>Tools/Technologies</h3>
-          <div className="experience__content">
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>Git</h4>
-                </div>
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>Command Line</h4>
-                </div>
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>Linux</h4>
-                </div>  
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>Cloud Development</h4>
-                </div>
-            </article>
-            <article className="exp__details">
-                <BsPatchCheckFill className='exp__details-icon'  />
-                <div>
-                  <h4>Firebase</h4>
-                </div>     
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-    
-  )
-}
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="Sept 2019 - Nov 2020"
+      
+                    iconStyle={{ background: '#800000', color: '#fff' }}
+                    icon={<WorkIcon />}
+                >
+                    <div className="experience__content">
+                       
+                        <div className="experience__text">
+                            <h5 className="vertical-timeline-element-title">Tutor / Adminstrator</h5>
+                            <h6 className="vertical-timeline-element-subtitle">Spider Smart</h6>
+                        </div>
+                        <div>
+                         <img src={SS}  className="experience__img"alt="" />
+                        </div>
+                    </div>
+                    <div className="modal_left">
+                        <DisplayModal/>
+                    </div>
+                </VerticalTimelineElement>
 
-export default Experience
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="Aug 2014 - May 2018"
+      
+                    iconStyle={{ background: '#000', color: '#fff' }}
+                    icon={<SchoolIcon />}
+                >
+                    <div className="experience__content">
+                        <div>
+                            <img src={CHS}  className="experience__img"alt="" />
+                        </div>
+ 
+                        <div className="experience__text">
+                            <h5 className="vertical-timeline-element-title">High School Diploma</h5>
+                            <h6 className="vertical-timeline-element-subtitle">Coppell High School</h6>
+                            
+                        </div>
+                       
+                    </div>
+                    <div className="modal_right">
+                        <DisplayModal/>
+                    </div>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    iconStyle={{ background: 'rgb(16, 204, 82)', color: '#fff' }}
+                    icon={<StarIcon />}
+                />
+            </VerticalTimeline>
+            </div>
+        </section>
+  
+    )
+  }
+  
+  export default Experience

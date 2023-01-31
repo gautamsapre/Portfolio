@@ -6,13 +6,15 @@ const Footer = () => {
     <section id="footer" className='foot'>
       <footer>
       <a href="#" className='footer__logo'>Gautam</a>
-      <ul className="permalinks">
-        <li><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <div className="container_permakinks">
+        <ul className="permalinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
       <div className="footer__socials">
         <a href="https://www.facebook.com/gautam.sapre.7" target="_blank"> <BsFacebook /> </a>
         <a href="https://twitter.com/GautamSapre" target="_blank"> <BsTwitter/> </a>

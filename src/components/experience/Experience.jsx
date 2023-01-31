@@ -28,18 +28,19 @@ const Experience = () => {
                     iconStyle={{ background: '#000', color: '#fff' }}
                     icon={<SchoolIcon />}
 
-                >
+                >   
                     <div className="experience__content">
+                        <div>
+                         <img src={UTD}  className="experience__img"alt="" />
+                        </div>
                         <div className="experience__text">
                             <h5 className="vertical-timeline-element-title">Master's in Computer Science</h5>
                             <h6 className="vertical-timeline-element-subtitle">The University of Texas at Dallas</h6>
                         </div>
-                        <div>
-                         <img src={UTD}  className="experience__img"alt="" />
-                        </div>
+                        
                         
                     </div>
-                    <div className="modal_left">
+                    <div className="modal_right">
                         <DisplayModal data = {exp_data[0]}/>
                     </div>
                 </VerticalTimelineElement>
@@ -73,18 +74,18 @@ const Experience = () => {
                     icon={<SchoolIcon />}
                 >
                     <div className="experience__content">
-                        
+                         <div>
+                         <img src={UTD}  className="experience__img"alt="" />
+                        </div>
                         <div className="experience__text">
                             <h5 className="vertical-timeline-element-title">Bachelor's in Computer Science</h5>
                             <h6 className="vertical-timeline-element-subtitle">The University of Texas at Dallas</h6>
                             
                         </div>
-                        <div>
-                         <img src={UTD}  className="experience__img"alt="" />
-                        </div>
+                        
                     
                     </div>
-                    <div className="modal_left">
+                    <div className="modal_right">
                         <DisplayModal data = {exp_data[2]}/>
                     </div>
                 </VerticalTimelineElement>
@@ -120,16 +121,16 @@ const Experience = () => {
                     icon={<WorkIcon />}
                 >
                     <div className="experience__content">
-                       
+                        <div>
+                         <img src={SS}  className="experience__img"alt="" />
+                        </div>
                         <div className="experience__text">
                             <h5 className="vertical-timeline-element-title">Tutor / Adminstrator</h5>
                             <h6 className="vertical-timeline-element-subtitle">Spider Smart</h6>
                         </div>
-                        <div>
-                         <img src={SS}  className="experience__img"alt="" />
-                        </div>
+                        
                     </div>
-                    <div className="modal_left">
+                    <div className="modal_right">
                         <DisplayModal data = {exp_data[4]}/>
                     </div>
                 </VerticalTimelineElement>

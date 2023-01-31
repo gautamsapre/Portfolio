@@ -4,7 +4,6 @@ import AWS from '../../assets/AWS.png'
 import CPI from '../../assets/CPI.png'
 import SS from '../../assets/SpiderSmart.png'
 import CHS from '../../assets/Coppell.png'
-import './exp_details.css'
 const exp_data = [
     {
       id: 0,

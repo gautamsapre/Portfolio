@@ -34,9 +34,10 @@
     margin-bottom: 1rem;
 }
 .pro {
-    height: 100vh;
+    height: 150vh;
+    padding-top: 5rem;
 }
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 1024px) {
     .projects__container {
         grid-template-columns: 1fr 1fr;
         gap: 1.2rem;
@@ -54,8 +55,7 @@
         justify-content: center;
     }
     .pro {
-        padding-top: 70rem;
         padding-bottom: 15rem;
-        height: 130vh;
+        height: 230vh;
     }
 }

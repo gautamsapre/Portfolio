@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import './experience.css'
 import "bootstrap/dist/css/bootstrap.min.css";
-import './exp_details.css'
 
 function MyVerticallyCenteredModal(props) {
     return (

@@ -1,3 +1,7 @@
+.skills {
+    height: 150vh;
+    padding-top: 5rem;
+}
 .skills__container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -39,7 +43,8 @@
     color: var(--color-primary);
 }
 
-@media screen and (max-width: 1224px) {
+
+@media screen and (max-width: 1024px) {
     .skills__container{
         grid-template-columns: 1fr;
         height: 100vh;
@@ -66,8 +71,6 @@
         padding:1rem;
         justify-content: center;
     }
-    .skills {
-        height: 40vh;
-    }
+    
 
 }

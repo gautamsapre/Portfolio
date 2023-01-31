@@ -54,7 +54,7 @@
 @media screen and (max-width: 600px) {
     .experience {
         
-        height: 290vh;
+        height: 320vh;
         padding-top: 5rem;
     }
     .experience__text h5 {

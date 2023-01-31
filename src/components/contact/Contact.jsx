@@ -20,7 +20,10 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
-      window.location.reload();
+      setTimeout(function(){
+        window.location.reload();;
+     }, 1000);
+      
       
     };
   return (

@@ -1,14 +1,17 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import './contact.css'
 import {MdEmail} from 'react-icons/md'
 import {BsLinkedin, BsMessenger} from 'react-icons/bs'
 import emailjs from 'emailjs-com'
-
 const Contact = () => {
 
   const form = useRef();
 
   const sendEmail = (e) => {
+    setTimeout(() =>{
+      form.resetFields();
+    },500)
+    
     e.preventDefault();
 
     emailjs.sendForm('service_3ihljck', 'template_lge1gkw', form.current, 'sMUjy9PtDiUUtBnjn')
@@ -17,6 +20,8 @@ const Contact = () => {
       }, (error) => {
           console.log(error.text);
       });
+      window.location.reload();
+      
     };
   return (
     <section id="contact" className='contact'>
@@ -46,10 +51,10 @@ const Contact = () => {
           </article>
         </div>
         <form ref={form} onSubmit={sendEmail}>
-          <input type="text" name='name' placeholder='Enter Your Name'  required />
+          <input type="text" name='name' placeholder='Enter Your Name' required />
           <input type="email" name="email" placeholder='Enter Your Email' />
           <textarea name="message" cols="" rows="7" placeholder='Enter your message'></textarea>
-          <button type='submit' className='btn btn-primary'>Send</button>
+          <button type='submit'  className='btn btn-primary'>Send</button>
         </form>
       </div>
 

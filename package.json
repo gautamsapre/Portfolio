@@ -1,5 +1,8 @@
 {
+<<<<<<< HEAD
   "homepage": "http://gautamsapre.github.io/Portfolio",
+=======
+>>>>>>> 1f13c750 (new changes)
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -20,8 +23,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
+<<<<<<< HEAD
     "predeploy": "npm run build",
     "deploy":"gh-pages -d build",
+=======
+>>>>>>> 1f13c750 (new changes)
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,8 +49,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "gh-pages": "^5.0.0"
+=======
+>>>>>>> 1f13c750 (new changes)
   }
 }

@@ -6,7 +6,21 @@ import SS from '../../assets/SpiderSmart.png'
 import CHS from '../../assets/Coppell.png'
 const exp_data = [
     {
-      id: 0,
+        id: 2,
+        image: AWS,
+        title: "Software Development Engineer Intern",
+        subtitle: "Amazon Inc",
+        date: "May 2023 - Aug 2023",
+        description:<> 
+        <ul className='list_modal'>
+            <p><em>Details coming soon...</em></p>
+            
+        </ul>
+        </>
+    
+    },
+    {
+      id: 1,
       image: UTD,
       title: "Master's in Computer Science",
       subtitle: "University of Texas at Dallas",
@@ -40,7 +54,7 @@ const exp_data = [
   
     },
     {
-        id: 1,
+        id: 2,
         image: AWS,
         title: "Software Development Engineer Intern",
         subtitle: "Amazon Inc",
@@ -68,7 +82,7 @@ const exp_data = [
     
       },
       {
-        id: 2,
+        id: 3,
         image: UTD,
         title: "Bachelors's in Computer Science",
         subtitle: "University of Texas at Dallas",
@@ -104,7 +118,7 @@ const exp_data = [
         
       },
       {
-        id: 3,
+        id: 4,
         image: CPI,
         title: "Software Engineering Intern",
         subtitle: "Communications and Power Ind.",
@@ -132,7 +146,7 @@ const exp_data = [
     
       },
       {
-        id: 4,
+        id: 5,
         image: SS,
         title: "Tutor / Adminstrator",
         subtitle: "Spider Smart",
@@ -156,7 +170,7 @@ const exp_data = [
     
       },
       {
-        id: 5,
+        id: 6,
         image: CHS,
         title: "High School Diploma",
         subtitle: "Coppell High School",

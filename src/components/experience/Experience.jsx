@@ -40,6 +40,7 @@ const Experience = () => {
                     </div>
                     <div className="modal_right">
                         <DisplayModal data = {exp_data[0]}/>
+                        {console.log(exp_data[0])}
                     </div>
                     
                 </VerticalTimelineElement>

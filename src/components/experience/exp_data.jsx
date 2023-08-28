@@ -6,14 +6,30 @@ import SS from '../../assets/SpiderSmart.png'
 import CHS from '../../assets/Coppell.png'
 const exp_data = [
     {
-        id: 2,
+        id: 0,
         image: AWS,
         title: "Software Development Engineer Intern",
         subtitle: "Amazon Inc",
         date: "May 2023 - Aug 2023",
         description:<> 
         <ul className='list_modal'>
-            <p><em>Details coming soon...</em></p>
+            <li>
+            Developed and deployed a critical fullstack feature for CodeCatalyst’s Source team, enhancing developer user experience
+            by seamlessly integrating JAVA and ReactJS technologies.            
+            </li>
+
+            <li>
+            Spearheaded end-to-end project delivery, architecting scalable infrastructure that enabled seamless expansion of the
+            product’s capabilities, contributing to its long-term success.
+            </li>
+            <li>
+            Collaborated with cross-functional teams to design, code, and deploy essential APIs while demonstrating a deep understanding of software development principles.
+            </li>
+            <li>
+
+            <br />
+            Skills: Amazon Web Services (AWS) · Database Design · React.js · TypeScript · JAVA 
+            </li>
             
         </ul>
         </>
